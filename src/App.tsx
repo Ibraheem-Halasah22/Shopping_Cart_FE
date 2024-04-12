@@ -1,11 +1,15 @@
 import { Container } from "react-bootstrap";
 import Router from "./Router";
+import { Navbar } from "./components";
 
 function App() {
   return (
-    <Container className="mb-4">
-      <Router />
-    </Container>
+    <>
+      <Navbar />
+      <Container className="mb-4">
+        <Router />
+      </Container>
+    </>
   );
 }
 
