@@ -1,9 +1,10 @@
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import ShoppingCartIcon from "./ShoppingCartIcon";
+import RedBadge from "./RedBadge";
 function Navbar() {
   return (
-    <NavbarBs className="bg-white shadow-sm mb-3">
+    <NavbarBs sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
           <Nav.Link to="/" as={NavLink}>
@@ -22,6 +23,9 @@ function Navbar() {
           className="rounded-circle"
         >
           <ShoppingCartIcon />
+          <RedBadge color="white" width="1.5rem" height="1.5rem">
+            3
+          </RedBadge>
         </Button>
       </Container>
     </NavbarBs>
