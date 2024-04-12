@@ -1,5 +1,12 @@
+import { Container } from "react-bootstrap";
+import Router from "./Router";
+
 function App() {
-  return <h1>Hello Shopping Cart</h1>;
+  return (
+    <Container className="mb-4">
+      <Router />
+    </Container>
+  );
 }
 
 export default App;
