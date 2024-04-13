@@ -4,7 +4,7 @@ type RedBadgeProps = {
   color: string;
   width: string;
   height: string;
-  children?: React.ReactNode;
+  children: React.ReactNode;
 };
 function RedBadge({ color, width, height, children }: RedBadgeProps) {
   return (
